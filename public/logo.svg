@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="134" height="34" viewBox="0 0 134 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M0 0H134V34H0V0Z" fill="#FFF159"/>
+  <path d="M19.5 8.5H114.5V25.5H19.5V8.5Z" fill="#FFF159"/>
+  <path d="M19.5 8.5L114.5 8.5L114.5 25.5L19.5 25.5L19.5 8.5Z" stroke="#333333" stroke-width="2"/>
+  <path d="M67 8.5V25.5" stroke="#333333" stroke-width="2"/>
+  <path d="M19.5 17H114.5" stroke="#333333" stroke-width="2"/>
+</svg> 
