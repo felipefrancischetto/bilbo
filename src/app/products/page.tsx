@@ -1,10 +1,11 @@
-'use client';
+"use client";
 
 import styled from 'styled-components';
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
 import ProductCard from '@/components/ProductCard';
 import { Product } from '@/types/product';
+import { Suspense } from "react";
 
 const Container = styled.div`
   max-width: 1200px;
@@ -125,7 +126,7 @@ const categoryNames: Record<string, string> = {
   esportes: 'Esportes e Fitness'
 };
 
-export default function ProductsPage() {
+function ProductsContent() {
   const searchParams = useSearchParams();
   const category = searchParams.get('category');
   
@@ -162,5 +163,13 @@ export default function ProductsPage() {
         ))}
       </Grid>
     </Container>
+  );
+}
+
+export default function ProductsPage() {
+  return (
+    <Suspense fallback={<div>Carregando...</div>}>
+      <ProductsContent />
+    </Suspense>
   );
 } 
